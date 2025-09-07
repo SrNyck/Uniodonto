@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +45,7 @@ body {
     text-decoration: underline;
 }
 .btn-top {
-    background: #640525;
+    background: #750808;
     color: #8b0d32;
     padding: 8px 15px;
     border-radius: 5px;
@@ -53,7 +54,7 @@ body {
     transition: 0.3s;
 }
 .btn-top:hover {
-    background: #f1e6ea;
+    background: #bd0d4e;
 }
 
 /* HERO */
@@ -79,7 +80,7 @@ body {
     margin-bottom: 20px;
 }
 .btn-hero {
-    background: #8b0d32;
+    background: #55071f;
     color: #fff;
     padding: 12px 25px;
     border-radius: 5px;
@@ -89,10 +90,15 @@ body {
 .btn-hero:hover {
     background: #a31640;
 }
-.hero-img img {
-    max-width: 400px;
-    border-radius: 10px;
+.hero-img {
+    display: flex;
+    justify-content: center; /* centraliza a imagem */
     width: 100%;
+}
+.hero-img img {
+    max-width: 100%;  /* ocupa até 100% da largura do container */
+    height: auto;     /* mantém proporção */
+    border-radius: 10px;
 }
 
 /* SERVIÇOS */
@@ -160,7 +166,7 @@ footer {
         font-size: 2rem;
     }
     .hero-img img {
-        max-width: 300px;
+        max-width: 90%; /* limita a largura no tablet/celular */
     }
 }
 
